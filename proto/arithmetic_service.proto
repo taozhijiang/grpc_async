@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+
+package Arithmetic;
+
+message ReqOperand {
+    int32 num_1 = 1;
+    int32 num_2 = 2;
+}
+
+message RspOperand {
+    int32 num = 1;
+}
+
+
+// gRpc interface
+
+service Interface {
+
+    rpc GetSum(ReqOperand) returns (RspOperand) {}
+    rpc GetSub(ReqOperand) returns (RspOperand) {}
+
+    // ...
+
+}
