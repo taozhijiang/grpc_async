@@ -29,7 +29,7 @@ link_directories(
 aux_source_directory(. SOURCE)
 add_executable(grpc_async ${SOURCE})
 
-set (EXTRA_LIBS ${EXTRA_LIBS} pthread)
+set (EXTRA_LIBS ${EXTRA_LIBS} pthread z)
 set (EXTRA_LIBS ${EXTRA_LIBS} protoc protobuf)
 set (EXTRA_LIBS ${EXTRA_LIBS} grpc++ grpc gpr)
 
