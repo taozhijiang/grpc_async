@@ -1,5 +1,5 @@
-#ifndef __SERVICE_IMPL_
-#define __SERVICE_IMPL_
+#ifndef __SERVICE_IMPL__
+#define __SERVICE_IMPL__
 
 #include "arithmetic_service.pb.h"
 #include "arithmetic_service.grpc.pb.h"
@@ -27,4 +27,4 @@ public:
 };
 
 
-#endif // __SERVICE_IMPL_
+#endif // __SERVICE_IMPL__
